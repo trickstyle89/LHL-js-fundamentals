@@ -72,8 +72,26 @@ elements of an iterable object (such as an array) into individual elements.
 It's like to spread the elements of an array into individual variables.
 */
 
-/* crazy concise declarative code.
-/* can the MAGIC number of charCodeAt(0)-96,0 represent the 1-25 alphabet designation?
+
+
+/* More concise but less understandble code.
+function high(words) {
+
+  const alpha = ' abcdefghijklmnopqrstuvwxyz';
+  const score = word => word.split('').reduce((a, b) => a + alpha.indexOf(b), 0);
+
+  return words
+    .split(' ')
+    .map((word, pos) => ({ word: word, pos: pos, score: score(word) }))
+    .sort((a, b) => a.score - b.score || b.pos - a.pos)
+    .pop()
+    .word;
+    
+}
+
+crazy concise declarative code.
+
+can the MAGIC number of charCodeAt(0)-96,0 represent the 1-25 alphabet designation?
 
 function high(s){
   let as = s.split(' ').map(s=>[...s].reduce((a,b)=>a+b.charCodeAt(0)-96,0));
