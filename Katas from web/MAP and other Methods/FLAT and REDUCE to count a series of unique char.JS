@@ -10,7 +10,9 @@ function test(num) {
         counter[elementIndex] = 1;
     }
     return counter;
-  }, {});
+  
+// this final curly brackets is important {} creates the object.
+}, {});
   }
       
   
