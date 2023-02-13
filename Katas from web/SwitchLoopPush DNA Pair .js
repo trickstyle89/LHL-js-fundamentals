@@ -5,14 +5,14 @@ function pairElement(str) {
   
   const matchWithBasePair = function(char) {
     switch (char) {
-      case "A":
-        return ["A", "T"];
-      case "T":
-        return ["T", "A"];
-      case "C":
-        return ["C", "G"];
-      case "G":
-        return ["G", "C"];
+    case "A":
+      return ["A", "T"];
+    case "T":
+      return ["T", "A"];
+    case "C":
+      return ["C", "G"];
+    case "G":
+      return ["G", "C"];
     }
   };
 
