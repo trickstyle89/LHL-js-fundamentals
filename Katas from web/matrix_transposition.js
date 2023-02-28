@@ -7,7 +7,7 @@ const transpose = function(matrix) {
   for (let i = 0; i < NumCols; i++) {
     
     //element wise transposition that creates empty arrays.
-    finalResults[i] = []; 
+    finalResults[i] = [];
     for (let j = 0; j < NumRows; j++) {
 
       //element wise transposition that swaps and creates new elements for the array.
