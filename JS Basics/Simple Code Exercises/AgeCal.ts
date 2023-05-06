@@ -1,5 +1,5 @@
-function ageCalculator(fName, birth, current) {
-var age = current - birth;
+function ageCalculator(fName: string, birth: number, current: number): string {
+var age: number = current - birth;
 return `${fName} is ${age} years old.`
 }
 
