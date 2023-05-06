@@ -1,5 +1,5 @@
-const chorus = "Let's Dance!";
-let repeat = 0;
+const chorus: string = "Let's Dance!";
+let repeat: number = 0;
 while (repeat < 10) {
     console.log(chorus);
     repeat++;
